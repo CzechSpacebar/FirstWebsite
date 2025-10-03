@@ -1,0 +1,539 @@
+/*
+
+Main color:
+RGB(255, 77, 0)
+
+*/
+
+/* Default settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    background: radial-gradient(circle at center, #1f1f1f, #000000);
+    color: white;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(8px);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0));
+    border-bottom: 2px solid rgba(255, 255, 255, 0.089);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+}
+
+.logo {
+    width: 40px; 
+    height: auto; 
+    margin: 0 5px 0 75px;
+}
+
+.navName {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.5rem;
+    transition: color 0.25s ease, font-weight 0.15s ease;
+}
+
+@media (max-width: 480px) {
+    .navName {
+        font-size: 1rem;
+    }
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.2rem;
+    list-style: none;
+    margin: 0 50px 0 0;
+    padding: 0;
+}
+
+.nav-links a {
+    padding: 0.25rem 0.4rem;
+    border-radius: 0.4rem;
+    transition: color 0.25s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+    color: rgb(255, 77, 0);
+}
+
+.navName:hover,
+.navName:focus-visible {
+    color: rgb(255, 77, 0);
+    font-weight: 500;
+}
+
+/* Navbar for Phones */
+.nav-toggle {
+    display: none;
+    font: inherit;
+    background: transparent;
+    color: #fff;
+    border: 0;
+    padding: 0.4rem 0.6rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.4rem;
+}
+
+.nav-toggle:focus-visible {
+    outline: 2px solid rgb(255, 77, 0);
+    outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        position: relative;
+        text-align: center;
+    }
+
+    .nav-toggle {
+        display: inline-block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background: rgba(0,0,0,0.88);
+        z-index: 1000;
+        flex-direction: column;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 0.8rem 0.75rem;
+        border-radius: 0.4rem;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+        color: rgb(255, 77, 0);
+    }
+}
+
+
+
+
+/* Main */
+.container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+main {
+    margin-top: 140px;
+}
+
+
+
+
+/* Socials */
+.socialLinks {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 20px;
+}
+
+.socialLinksEN {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 10px;
+}
+
+.socialLinks a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: white;
+    font-size: 0.95rem;
+    transition: color 0.25s ease;
+}
+
+.socialLinks a:hover {
+    color: rgb(255, 77, 0);
+}
+
+.socialIcon {
+    width: 20px;
+    height: auto;
+}
+
+@media (max-width: 1000px) {
+    .socialLinks {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .socialLinks {
+        margin: 0;
+    }
+}
+
+.phoneIconAlign {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.instaColor {
+    color: #ff0069;
+}
+
+.instaColor span {
+    color: white;
+}
+
+.discordColor {
+    color: #7289da;
+}
+
+.discordColor span {
+    color: white;
+}
+
+.onlyPhone {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .onlyPhone {
+        display: inline-flex;
+        align-items: center;
+    }
+    .socialIcon {
+        width: 50px;
+        height: auto;
+    }
+    main {
+        margin: 50px 0 0 0;
+    }
+}
+
+
+
+
+/* Title! */
+.MMATitle {
+    font-size: 4rem;
+}
+
+.MMASubtitle {
+    font-size: 2rem;
+}
+
+.MMATitle, .MMASubtitle {
+    color: rgb(255, 77, 0);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.attentionTitle {
+    color: rgb(255, 77, 0);
+    margin-top: 75px;
+    transition: transform 0.2s ease, color 0.5s ease;
+}
+
+.attentionTitle:hover {
+    transform: translateX(15px) translateY(-3px);
+}
+
+.attentionText {
+    color: rgb(255, 255, 255);
+    margin: 5px 0 0 0;
+    transition: transform 0.2s ease, color 0.5s ease;
+    display: flex;
+}
+
+.attentionText:hover {
+    transform: translateX(5px);
+    color: rgb(255, 77, 0);
+}
+
+.attentionFinalText {
+    color: rgb(255, 77, 0);
+    margin-top: 5px;
+    transition: transform 0.2s ease, color 0.5s ease;
+}
+
+.attentionFinalText:hover {
+    transform: translateX(15px) translateY(3px);
+}
+
+
+
+
+.whyMMATitle {
+    color: rgb(255, 77, 0);
+    margin-top: 75px;
+    transition: transform 0.2s ease, color 0.5s ease;
+}
+
+.whyMMATitle:hover {
+    transform: translateX(15px) translateY(-3px);
+}
+
+.whyMMAText {
+    margin: 5px 0 0 0;
+    transition: transform 0.2s ease, color 0.5s ease;
+    display: flex;
+}
+
+.whyMMAText:hover {
+    transform: translateX(5px);
+    color: rgb(255, 77, 0);
+}
+
+@media (max-width: 480px) {
+    .whyMMATitle {
+        text-align: center;
+    }
+}
+
+.whyMMAFinalText {
+    color: rgb(255, 77, 0);
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.siteFooter {
+    border-top: 2px solid rgba(255, 255, 255, 0.089);
+    padding: 1.5rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.747), rgba(0,0,0,0));
+}
+
+.innerFooterText {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    color: rgb(255, 239, 232);
+}
+
+footer a {
+    color: rgb(255, 77, 0);
+    position: relative;
+    transition: transform 0.2s ease, color 0.5s ease;
+}
+
+footer a:hover {
+    transform: translateY(-7px);
+    color: rgb(236, 176, 176);
+}
+
+.emojisInfo {
+    color: grey;
+    font-size: 0.75rem;
+}
+
+.emojisInfo a {
+    color: rgb(163, 163, 163);
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    footer  {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fonts */
+
+.montserrat100 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.montserrat200 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.montserrat300 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.montserrat400 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat500 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.montserrat600 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.montserrat700 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lexend300 {
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.lexend400 {
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lexend500 {
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.lexend600 {
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.lexend700 {
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lexend800 {
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.lexend900 {
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Minimum weight 200 maximal 700 */
+.mozilla-headline400 { 
+    font-family: "Mozilla Headline", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}

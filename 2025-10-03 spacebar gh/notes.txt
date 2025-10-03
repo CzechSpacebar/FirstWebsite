@@ -1,0 +1,28 @@
+.section-title::after {
+    content:"";                 /* vytvoří prázdný element */
+    display:block;              /* udělá z něj blok pod textem */
+    width: 70px;                /* délka podtržení */
+    height: 3px;                /* tloušťka čáry */
+    background: var(--accent);  /* barva čáry (u tebe rgb(255, 77, 0)) */
+    margin-top:.35rem;          /* mezera mezi textem a čárou */
+    border-radius: 2px;         /* zakulacení konců čáry */
+}
+
+Sexy podtržení
+
+
+.rank-list li {
+  display:flex;
+  gap:.6rem;
+  align-items:center;
+  padding:.4rem .6rem;
+  border-left: 3px solid transparent;   /* základní levý okraj průhledný */
+  border-radius: 8px;                   /* zaoblení rohů */
+}
+
+.rank-list li:hover {
+  border-left-color: var(--accent);     /* při hoveru se levý okraj obarví (oranžově) */
+  background: rgba(255,255,255,.04);    /* tmavší pozadí, co vytvoří tu “stěnu” */
+}
+
+Sexy dekorace textu

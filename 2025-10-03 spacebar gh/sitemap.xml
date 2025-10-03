@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <url>
+        <loc>https://spacebar.codes/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://spacebar.codes/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://spacebar.codes/"/>
+    </url>
+
+    <url>
+        <loc>https://spacebar.codes/mma/cs/</loc>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://spacebar.codes/mma/cs/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://spacebar.codes/mma/en/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://spacebar.codes/mma/en/"/>
+    </url>
+
+    <url>
+        <loc>https://spacebar.codes/mma/en/</loc>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://spacebar.codes/mma/cs/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://spacebar.codes/mma/en/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://spacebar.codes/mma/en/"/>
+    </url>
+
+</urlset>
